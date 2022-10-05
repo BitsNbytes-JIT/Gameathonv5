@@ -32,6 +32,9 @@ body {
 .about-container {
   position: relative;
   justify-content: center;
+  background-color: #ff2a6d;
+  padding-bottom: 3em;
+  /* #00b3fe, ff2a6d , d1f7ff, 005678, 89e3f6 */
 }
 
 /* .about-title {
@@ -47,10 +50,11 @@ body {
 } */
 
 .about-content {
-  background-color: #e0d9f6;
   color: #333;
   font-family: sans-serif;
   line-height: 1.5;
+  font-weight: lighter;
+  font-size: 1.1em;
   margin: 0;
   padding: 1rem 5rem;
   width: 100vw;
@@ -58,7 +62,6 @@ body {
 }
 
 #about-wrapper {
-  color: #011a32;
   font: 16px/1.25 'Raleway', sans-serif;
   text-align: left;
   margin-left: auto;
@@ -141,11 +144,22 @@ body {
 .about {
   width: 60vw;
   text-align: left;
-  padding-left: 2em;
   margin: 0;
   float: left;
-  padding-top: 5%;
   align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
+
+.abt-main{
+  padding-left: 2em;
+  font-size: 1.3em;
+}
+
+.abt-p{
+  padding-top: 2em;
+  padding-left: 2.4em;
+  font-size: 1.1em;
 }
 
 .mascot-image{
@@ -153,6 +167,227 @@ body {
   float: right;
 }
 
+#clg-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0d9f6;
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-weight: lighter;
+  font-size: 1em;
+  margin: 0;
+  padding: 2rem 5rem;
+  width: 100vw;
+  height:60vh;
+}
+
+#clg-image {
+  flex-basis: 40%;
+  margin-right: 3rem;
+}
+
+#clg-text {
+  padding: 2rem;
+  font-size: 1.05em;
+  padding-left: 20px;
+  float: right;
+  text-align: left;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
+.gallery{
+  position: relative;
+  padding: 6rem;
+  background-color: #d1f7ff;
+}
+/* #00b3fe, ff2a6d , d1f7ff, 005678, 89e3f6 */
+
+
+.gallery-text {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  display: block;
+  color: #00b3fe;
+  font-size: 6rem;
+  letter-spacing: 8px;
+  cursor: pointer;
+}
+
+.gallery-text::before {
+  content: "GALLERY";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(45deg,
+      transparent 0,
+      transparent 2px,
+      white 2px,
+      white 4px);
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+  transition: 1s;
+}
+
+.gallery-text::after {
+  content: "GALLERY";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(135deg,
+      transparent 0,
+      transparent 2px,
+      white 2px,
+      white 4px);
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0px;
+  transition: 1s;
+}
+
+.gallery-text:hover:before {
+  top: 10px;
+  left: 10px;
+}
+
+.gallery-text:hover:after {
+  top: -10px;
+  left: -10px;
+}
+
+#gallery {
+  line-height: 0;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 4px;
+  -moz-column-count: 4;
+  -moz-column-gap: 4px;
+  column-count: 4;
+  column-gap: 4px;
+}
+
+#gallery img {
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom: 5px;
+  filter: grayscale(100%);
+  transition: filter 0.5s;
+}
+
+#gallery img:hover {
+  filter: none;
+}
+
+@media (max-width: 1200px) {
+  #gallery {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+}
+@media (max-width: 1000px) {
+  #gallery {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
+@media (max-width: 800px) {
+  #gallery {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+@media (max-width: 400px) {
+  #gallery {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+}
+
+/* 
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.mySlides {
+  display: none; 
+}
+
+.first{
+  display: contents;
+}
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+img{
+  width: 50%;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .6
+  }
+
+  to {
+    opacity: 1
+  }
+} */
 footer {
   position: relative;
 }
@@ -403,12 +638,14 @@ a {
 
 /* Neon button effect */
 
-a {
+.a {
   position: relative;
   display: inline-block;
   padding: 25px 30px;
-  margin: 40px 0;
-  color: #03e9f4;
+  margin: 0;
+  color: black;
+  background-color: #63eff7;
+  border-radius: 25%;
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.5s;
@@ -417,7 +654,7 @@ a {
   margin-right: 50px;
 }
 
-a:hover {
+.a:hover {
   background: #03e9f4;
   color: #050801;
   box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
@@ -426,20 +663,20 @@ a:hover {
     linear-gradient(transparent, rgba(0, 0, 0, 0.3333333333));
 }
 
-a:nth-child(1) {
+.a:nth-child(1) {
   filter: hue-rotate(270deg);
 }
 
-a:nth-child(2) {
+.a:nth-child(2) {
   filter: hue-rotate(110deg);
 }
 
-a span {
+.a span {
   position: absolute;
   display: block;
 }
 
-a span:nth-child(1) {
+.a span:nth-child(1) {
   top: 0;
   left: 0;
   width: 100%;
@@ -468,7 +705,7 @@ a span:nth-child(1) {
     left: 100%;
   }
 }
-a span:nth-child(2) {
+.a span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
@@ -499,7 +736,7 @@ a span:nth-child(2) {
     top: 100%;
   }
 }
-a span:nth-child(3) {
+.a span:nth-child(3) {
   bottom: 0;
   right: 0;
   width: 100%;
@@ -530,7 +767,7 @@ a span:nth-child(3) {
     right: 100%;
   }
 }
-a span:nth-child(4) {
+.a span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;
