@@ -4,6 +4,11 @@ body {
   margin: 0;
 }
 
+@font-face {
+  font-family: "origin-tech-demo";
+  src: url('Assets/fonts/OriginTech\ personal\ use.ttf');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +17,7 @@ body {
 #hero {
   width: 100vw;
   height: 100vh;
-  background: url(./images/cool-geometric-triangular-figure-neon-laser-light-great-backgrounds.jpg);
+  background: url(./Assets/images/cool-geometric-triangular-figure-neon-laser-light-great-backgrounds.jpg);
   background-size: cover;
   position: relative;
   filter: brightness(80%);
@@ -160,18 +165,30 @@ body {
 
 .about-container {
   position: relative;
-  align-items: center;
-  display: flex;
   justify-content: center;
+  display: flex;
   height: 100%;
   width: 100%;
 }
+.about-title {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 2em;
+  font-family: "origin-tech-demo", sans-serif;
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 10px 37px rgba(223, 19, 241, 0.4);
+  line-height: 1.5;
+  padding: 1rem 2rem;
+ align-items: center;
+ align-content: center;
+}
 
+.about{
+  justify-content: center;
+}
 .about-content {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 5px;
   color: #333;
-  text-align: justify;
   font-family: sans-serif;
   line-height: 1.5;
   max-width: 50%;
