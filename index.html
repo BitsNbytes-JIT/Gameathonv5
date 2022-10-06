@@ -7,6 +7,9 @@
     <title>Gameathon 5.0</title>
     <link rel="stylesheet" href="style.css" />
     <script src="./script.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <section id="hero"></section>
@@ -312,7 +315,27 @@
       <div class="c"></div>
       <div class="c"></div>
     </div>
-    <div id="nav-bar"></div>
+    <div id="toggle">
+      <nav class="nav-menu">
+        <div class="logos">
+          <div class="bnb-logo">
+            <img src="images/BNB.png">
+          </div>
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   <div class="about-container">
     <div class="about-content">
       <div id="about-wrapper">
@@ -358,7 +381,6 @@
   </div>
   <div class="gallery"><span class="gallery-text">GALLERY</span>
     <div id="gallery">
-      
       <img src="./Assets/images/DSC_5813.JPG" alt="">
       <img src="./Assets/images/DSC_5698.JPG" alt="">
       <img src="./Assets/images/DSC_5749.JPG" alt="">
