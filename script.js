@@ -10,6 +10,10 @@ document.querySelector(".pop-image span").onclick = () => {
 };
 
 const items = document.querySelectorAll(".accordion button");
+// Thumbnail image controls
+function currentSlide(n) { 
+  showSlides((slideIndex = n));
+}
 
 function toggleAccordion() {
   const itemToggle = this.getAttribute("aria-expanded");
@@ -24,3 +28,4 @@ function toggleAccordion() {
 }
 
 items.forEach((item) => item.addEventListener("click", toggleAccordion));
+
