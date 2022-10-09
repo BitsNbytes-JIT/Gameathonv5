@@ -771,6 +771,8 @@ footer .wave#wave4 {
 }
 #test{
   font-family: "origin-tech-demo";
+  padding: 10%;
+  font-size: 2em;
 }
 .testimonial {
   position: relative;
