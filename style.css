@@ -33,6 +33,19 @@ body {
   background-position: center;
 }
 
+.gameathon-logo{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(./Assets/images/Logo\ draft-4.png);
+  background-position: center;
+  background-size: 22%;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  align-items: center;
+
+}
+
 /* NAVIGATION BAR SECTION */
 nav {
   display: flex;
@@ -851,16 +864,17 @@ footer .wave#wave4 {
 .head-container {
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 40%;
+  top: 70%;
   left: 50%;
-  z-index: 1000;
+  
 }
 
 .glitch,
 .glow {
   color: rgb(223, 191, 191);
   position: relative;
-  font-size: 9vw;
+  font-size: 7vw;
+      white-space: nowrap;
   -webkit-animation: glitch 5s 5s infinite;
   animation: glitch 5s 5s infinite;
 }
@@ -1804,7 +1818,6 @@ a {
   transition: 0.5s;
   letter-spacing: 4px;
   overflow: hidden;
-  margin-right: 50px;
 }
 
 .a:hover {
@@ -1941,7 +1954,7 @@ a {
   width: 20em;
   background-color: #63eff7;
   color: #fff;
-  top: 70%;
+  top: 85%;
 }
 
 .register:hover {
