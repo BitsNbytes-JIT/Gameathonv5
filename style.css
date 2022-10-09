@@ -155,6 +155,7 @@ input[type="checkbox"] {
 }
 
 .about-container {
+
   position: relative;
   justify-content: center;
   background-color: #ff2a6d;
@@ -183,6 +184,7 @@ input[type="checkbox"] {
 }
 
 #abt-container {
+  font-family: "origin-tech-demo";
   display: flex;
   flex-direction: column;
   float: left;
@@ -320,6 +322,7 @@ input[type="checkbox"] {
 
 
 .gallery-text {
+  font-family: "origin-tech-demo";
   position: absolute;
   left: 50%;
   top: 10%;
@@ -738,28 +741,23 @@ footer .wave#wave4 {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-.container {
-  height: 100vh;
+.testimonial-container {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #e3f2fd;
 }
-#testimonial-container{
-  display: flex;
+#testimonial-title{
   font-family: "origin-tech-demo";
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 100%;
+  font-size: 1rem;
 }
 #test{
   font-family: "origin-tech-demo";
 }
 .testimonial {
   position: relative;
-  max-width: 900px;
+  max-width: 50%;
   width: 100%;
   padding: 50px 0;
   overflow: hidden;
