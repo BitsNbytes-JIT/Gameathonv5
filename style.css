@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
 
 @font-face {
   font-family: "origin-tech-demo";
   src: url("Assets/fonts/originTechDemo.ttf");
 }
+
 
 * {
   margin: 0;
@@ -21,6 +23,9 @@ body {
   overflow-x: hidden;
 }
 
+
+/* HERO SECTION */
+
 #hero {
   width: 100vw;
   height: 100vh;
@@ -31,6 +36,9 @@ body {
   position: relative;
   background-position: center;
 }
+
+
+/* NAVIGATION BAR SECTION */
 
 nav {
   display: flex;
@@ -99,7 +107,6 @@ input[type="checkbox"] {
   nav {
     padding: 0 20px 0 0px;
   }
-
 }
 
 @media (max-width: 920px) {
@@ -154,17 +161,20 @@ input[type="checkbox"] {
      }
 }
 
+
+/* ABOUT SECTION */
+
 .about-container {
 
   position: relative;
   justify-content: center;
-  background-color: #ff2a6d;
+  background-color: #160d16;
   padding-bottom: 3em;
-  /* #00b3fe, ff2a6d , d1f7ff, 005678, 89e3f6 */
+  /* #00b3fe, ff2a6d , d1f7ff, 005678, 89e3f6, #ec4e00 */
 }
 
 .about-content {
-  color: #333;
+  color: #ff2a6d;
   font-family: sans-serif;
   line-height: 1.5;
   font-weight: lighter;
@@ -200,6 +210,7 @@ input[type="checkbox"] {
   font-weight: 900;
   line-height: 1;
 }
+
 
 
 @keyframes text-shadow {
@@ -282,6 +293,9 @@ input[type="checkbox"] {
   float: right;
 }
 
+
+/* ABOUT THE COLLEGE SECTION */
+
 #clg-container {
   display: flex;
   align-items: center;
@@ -310,16 +324,14 @@ input[type="checkbox"] {
   text-align: left;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
+/* GALLERY SECTION */
 
 .gallery {
   position: relative;
   padding: 6rem;
   background-color: #d1f7ff;
 }
-
-/* #00b3fe, ff2a6d , d1f7ff, 005678, 89e3f6 */
-
 
 .gallery-text {
   font-family: "origin-tech-demo";
@@ -464,6 +476,8 @@ input[type="checkbox"] {
 }
 
 
+/* FAQ SECTION */
+
 .faq-container {
   margin: 0 auto;
   padding: 4rem;
@@ -591,6 +605,9 @@ input[type="checkbox"] {
   font-weight: 300;
   margin: 2em 0;
 }
+
+
+/* FOOTER SECTION */
 
 footer {
   position: relative;
@@ -935,10 +952,6 @@ img{
     opacity: 1
   }
 } */
-footer {
-  position: relative;
-}
-
 
 /* footer links */
 
@@ -1369,7 +1382,7 @@ a {
 /* Background particle effect */
 
 .wrap {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   width: 0;
