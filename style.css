@@ -302,6 +302,7 @@ input[type=checkbox] {
 .mascot-image {
   width: 20%;
   float: right;
+  top: 10%;
 }
 
 /* ABOUT THE COLLEGE SECTION */
@@ -1003,6 +1004,7 @@ footer a:hover {
 
 .glitch,
 .glow {
+  font-family: "origin-tech-demo";
   color: rgb(223, 191, 191);
   position: relative;
   font-size: 7vw;
@@ -1011,12 +1013,25 @@ footer a:hover {
   animation: glitch 5s 5s infinite;
 }
 
+.bnb{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 17%;
+  left: 50%;
+  color: rgb(223, 191, 191);
+}
+
+.bnb h2{
+  letter-spacing: 0.2vw;
+  font-size: 100%;
+}
+
 .glitch::before,
 .glow::before {
   content: attr(data-text);
   position: absolute;
-  left: -2px;
-  text-shadow: -5px 0 magenta;
+  left: -1.5px;
+  text-shadow: -4px 0 magenta;
   overflow: hidden;
   top: 0;
   -webkit-animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
@@ -1027,8 +1042,8 @@ footer a:hover {
 .glow::after {
   content: attr(data-text);
   position: absolute;
-  left: 2px;
-  text-shadow: -5px 0 lightgreen;
+  left: 1.5px;
+  text-shadow: -4px 0 lightgreen;
   overflow: hidden;
   top: 0;
   -webkit-animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
@@ -2280,6 +2295,129 @@ a {
   display: block;
 }
 
+
+
+
+@media (min-width: 1024px) {}
+
+@media (max-width: 768px) {
+  #hero {
+    background-attachment: inherit;
+  }
+
+  .gameathon-logo {
+    background-size: 45%;
+  }
+
+  .glitch .glow {
+    font-size: 10vw;
+  }
+
+  #abt-container h1 {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width:600px) {
+  #hero {
+    background-attachment: inherit;
+    height: 80vh;
+  }
+
+  .gameathon-logo {
+    background-size: 65%;
+  }
+
+  .glitch,
+  .glow {
+    font-size: 10vw;
+  }
+
+  .subtitle {
+    font-size: 3vw;
+  }
+
+  .about-content {
+    padding: 1rem 2rem;
+  }
+
+  .abt-main,
+  .abt-p {
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1em;
+    width: 100%;
+  }
+
+  #abt-container {
+    min-height: 30vh;
+  }
+
+  .a {
+    margin: 10%;
+    margin-top: 50%;
+  }
+
+  .mascot-image {
+    float: none;
+    width: 50%;
+  }
+
+  #abt-container h1 {
+    font-size: 2em;
+  }
+
+  #clg-container {
+    display: flow-root;
+    height: 100%;
+    padding: 1rem 2rem;
+  }
+
+  #clg-image {
+    max-width: 100%;
+  }
+
+  #clg-image img {
+    max-width: 100%;
+  }
+
+  .gallery {
+    padding: 1rem 2rem;
+  }
+
+  .gal-container .pop-image span {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 12;
+  }
+
+  .gal-container .pop-image {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+  }
+}
+
+.wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform-style: preserve-3d;
+  perspective: 300px;
+  -webkit-animation: 2s infinite linear;
+  animation: 2s infinite linear;
+}
 
 
 
