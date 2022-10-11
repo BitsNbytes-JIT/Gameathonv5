@@ -352,7 +352,7 @@ input[type=checkbox] {
 
   /* Clip Background Image */
 
-  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+  background: url(./Assets/images/lines.png) repeat-y;
   -webkit-background-clip: text;
   background-clip: text;
 
@@ -886,6 +886,33 @@ footer a:hover {
   row-gap: 30px;
   height: 100%;
   width: 100%;
+}
+
+#testimonial-title h1{
+  color: #484848;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer
+}
+#testimonial-title h1 span{
+  transition: .5s linear
+}
+#testimonial-title h1:hover span:nth-child(1){
+  margin-right: 5px
+}
+#testimonial-title h1:hover span:nth-child(1):after{
+  content: "";
+}
+#testimonial-title h1:hover span:nth-child(2){
+  margin-left: 30px
+}
+#testimonial-title h1:hover span{
+  color: #fc8955;
+  text-shadow: 0 0 10px #003366,
+               0 0 20px #003366, 
+               0 0 40px #003366;
 }
 
 .slide p {
@@ -2474,6 +2501,14 @@ a {
     font-size: 3vw;
   }
 
+  .bnb{
+    font-size: 85%;
+  }
+
+  #test{
+    font-size: 3em;
+  }
+
   .about-content {
     padding: 1rem 2rem;
   }
@@ -2555,6 +2590,7 @@ a {
     cursor: pointer;
     z-index: 12;
   }
+
 
   .gal-container .pop-image {
     position: fixed;
