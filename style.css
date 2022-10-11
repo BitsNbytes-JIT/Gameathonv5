@@ -2324,6 +2324,10 @@ a {
     height: 80vh;
   }
 
+  .wrap{
+    display: none;
+  }
+
   .gameathon-logo {
     background-size: 65%;
   }
