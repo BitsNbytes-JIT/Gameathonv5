@@ -575,11 +575,13 @@ input[type=checkbox] {
 }
 
 .accordion {
+  font-family:"Raleway",sans-serif;
   margin-top: 15%;
 }
 
 .accordion .accordion-item {
   border-bottom: 1px solid #e5e5e5;
+    font-family: "Raleway", sans-serif;
 }
 
 .accordion .accordion-item button[aria-expanded=true] {
@@ -835,13 +837,6 @@ footer a:hover {
   }
 }
 
-/* Google Fonts - Poppins */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
 
 .testimonial-container {
   width: 100%;
@@ -2604,10 +2599,11 @@ a {
 
   .faq-container {
     padding: 1rem;
+        padding-top: 3rem;
   }
 
   .faq-head h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
 
   }
 
@@ -2618,6 +2614,14 @@ a {
   .gallery-text::after {
     display: none;
   }
+  
+  .accordion{
+    margin-top: 20%;
+  }
+    #testimonial-title h1{
+      font-size: 2rem;
+      letter-spacing: 4px;
+    }
 }
 
 .wrap {
