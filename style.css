@@ -852,11 +852,13 @@ footer a:hover {
 }
 
 #testimonial-title {
+  padding-bottom: 10%;
   font-family: "origin-tech-demo";
   font-size: 1rem;
 }
 
 #test {
+  font-size: 4em;
   font-family: "origin-tech-demo";
 }
 
@@ -1008,7 +1010,7 @@ footer a:hover {
   font-family: "origin-tech-demo";
   color: rgb(223, 191, 191);
   position: relative;
-  font-size: 7vw;
+  font-size: 4.2vw;
   white-space: nowrap;
   -webkit-animation: glitch 5s 5s infinite;
   animation: glitch 5s 5s infinite;
