@@ -423,13 +423,13 @@ input[type=checkbox] {
 }
 
 .gallery-text:hover:before {
-  top: 10px;
-  left: 10px;
+  top: 1rem;
+  left: 1rem;
 }
 
 .gallery-text:hover:after {
-  top: -10px;
-  left: -10px;
+  top: -1rem;
+  left: -1rem;
 }
 
 #gallery img {
@@ -549,7 +549,7 @@ input[type=checkbox] {
 .faq-head h2 {
   font-size: 2rem;
   text-align: center;
-  height: 10vh;
+  height: auto;
   margin-bottom: 1rem;
   /* line-height: 90vh; */
   color: #fcedd8;
@@ -575,7 +575,7 @@ input[type=checkbox] {
 }
 
 .accordion {
-  margin-top: 7rem;
+  margin-top: 15%;
 }
 
 .accordion .accordion-item {
@@ -864,7 +864,7 @@ footer a:hover {
 
 .testimonial {
   position: relative;
-  max-width: 50%;
+  max-width: 75%;
   width: 100%;
   padding: 50px 0;
   overflow: hidden;
@@ -1019,7 +1019,7 @@ footer a:hover {
 .bnb{
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 17%;
+  top: 25%;
   left: 50%;
   color: rgb(223, 191, 191);
 }
@@ -1028,6 +1028,8 @@ footer a:hover {
   letter-spacing: 0.2vw;
   font-size: 100%;
 }
+
+
 
 .glitch::before,
 .glow::before {
@@ -2301,7 +2303,7 @@ a {
 
 
 
-@media (min-width: 1024px) {}
+/* @media (min-width: 1024px) {}
 
 @media (max-width: 768px) {
   #hero {
@@ -2412,7 +2414,7 @@ a {
     width: 100vw;
     z-index: 10;
   }
-}
+} */
 
 .wrap {
   position: absolute;
@@ -2471,7 +2473,7 @@ a {
   .about-content {
     padding: 1rem 2rem;
   }
-
+    
   .abt-main,
   .abt-p {
     padding-left: 1em;
@@ -2488,11 +2490,19 @@ a {
     margin: 10%;
     margin-top: 0%;
   }
+  
+    .about-container .a {
+      margin-top: 50%;
+    }
 
   .mascot-image {
     float: none;
     width: 50%;
   }
+  
+    .testimonial{
+      max-width: 80%;
+    }
 
   #abt-container h1 {
     font-size: 2em;
@@ -2548,6 +2558,19 @@ a {
     width: 100vw;
     z-index: 10;
   }
+    .faq-container{
+      padding: 1rem;
+    }
+        .faq-head h2{
+          font-size: 1.8rem;
+          
+        }
+                .gallery-text::before{
+                  left: 20px;
+                }
+                                .gallery-text::after{
+                                  left: 20px;
+                                }
 }
 
 .wrap {
