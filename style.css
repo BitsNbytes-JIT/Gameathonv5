@@ -16,12 +16,12 @@
   transition: all 0.3s;
 }
 
-body {
+html,body {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   background-color: #ffffff;
   text-align: center;
-  overflow-x: hidden;
+  overflow-x:hidden;
 }
 
 /* HERO SECTION */
@@ -118,11 +118,22 @@ input[type=checkbox] {
   nav {
     padding: 0 20px 0 0px;
   }
-}
-
-@media (max-width: 920px) {
   nav .menu-btn i {
     display: block;
+  }
+  nav{
+    display: flex;
+    width: 100%;
+    background: rgb(0 0 0 / 37%);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
   }
 
   #click:checked~.menu-btn i:before {
@@ -133,12 +144,77 @@ input[type=checkbox] {
     position: fixed;
     top: 50px;
     left: -100%;
-    background: rgba(255, 255, 255, 0.1);
-    height: 100vh;
+    background: rgb(0 0 0 / 83%);
+    height: 53vh;
     width: 100%;
     text-align: center;
     display: block;
     transition: all 0.1s ease;
+    margin-top: 3%;
+  }
+
+  #click:checked~ul {
+    left: 0;
+  }
+
+  nav ul li {
+    width: 100%;
+    margin: 40px 0;
+  }
+
+  nav ul li a {
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  #click:checked~ul li a {
+    margin-left: 0px;
+  }
+
+  nav ul li a.active,
+  nav ul li a:hover {
+    background: none;
+    color: #8a2435;
+  }
+}
+
+@media (max-width: 920px) {
+  nav .menu-btn i {
+    display: block;
+  }
+  nav{
+    display: flex;
+    width: 100vw;
+    background: rgb(0 0 0 / 37%);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  #click:checked~.menu-btn i:before {
+    content: "\f00d";
+  }
+
+  nav ul {
+    position: fixed;
+    top: 50px;
+    left: -100%;
+    background: rgb(0 0 0 / 83%);
+    height: 53vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.1s ease;
+    margin-top: 3%;
   }
 
   #click:checked~ul {
@@ -433,7 +509,7 @@ input[type=checkbox] {
 }
 
 #gallery img {
-  height: auto;
+  height: 100%;
   filter: grayscale(100%);
   background: #fff;
 }
@@ -575,13 +651,11 @@ input[type=checkbox] {
 }
 
 .accordion {
-  font-family:"Raleway",sans-serif;
   margin-top: 15%;
 }
 
 .accordion .accordion-item {
   border-bottom: 1px solid #e5e5e5;
-    font-family: "Raleway", sans-serif;
 }
 
 .accordion .accordion-item button[aria-expanded=true] {
@@ -837,6 +911,14 @@ footer a:hover {
   }
 }
 
+/* Google Fonts - Poppins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* overflow-x:hidden; */
+}
 
 .testimonial-container {
   width: 100%;
@@ -1043,7 +1125,7 @@ footer a:hover {
   transform: translate(-50%, -50%);
   top: 25%;
   left: 50%;
-  color: rgb(223, 191, 191);
+  color: rgb(228 235 237);
 }
 
 .bnb h2 {
@@ -2456,7 +2538,7 @@ a {
 
 @media (max-width: 768px) {
   #hero {
-    background-attachment: inherit;
+    background-attachment: fixed;
   }
 
   .gameathon-logo {
@@ -2474,10 +2556,19 @@ a {
 
 @media screen and (max-width:600px) {
   #hero {
-    background-attachment: inherit;
+    background-attachment: fixed;
     height: 100vh;
     width: 100vw;
   }
+
+  #testimonial-title h1 {
+    color: #484848;
+    font-size: 2.3em;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer;
+}
 
   .wrap {
     display: none;
@@ -2572,7 +2663,7 @@ a {
   }
 
   #gallery img {
-    height: auto;
+    height: 100%;
   }
 
   .gal-container .pop-image span {
@@ -2599,12 +2690,19 @@ a {
 
   .faq-container {
     padding: 1rem;
-        padding-top: 3rem;
   }
 
   .faq-head h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 
+  }
+
+  .accordion .accordion-content{
+    overflow: inherit;
+  }
+
+  .accordion .accordion-content p {
+    margin: 1em 0;
   }
 
   .gallery-text::before {
@@ -2614,14 +2712,6 @@ a {
   .gallery-text::after {
     display: none;
   }
-  
-  .accordion{
-    margin-top: 20%;
-  }
-    #testimonial-title h1{
-      font-size: 2rem;
-      letter-spacing: 4px;
-    }
 }
 
 .wrap {
@@ -2652,6 +2742,8 @@ a {
   animation-delay: 0.01s;
   background-color: hsl(280.2666666667deg, 100%, 50%);
 }
+
+
 
 @-webkit-keyframes orbit1 {
   20% {
