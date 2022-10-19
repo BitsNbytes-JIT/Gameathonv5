@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Design by foolishdeveloper.com -->
+    <title>Glassmorphism login Form Tutorial in html css</title>
+    <link rel="stylesheet" href="Registration.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./Registration.js"></script>
+  </head>
+  <body>
+    <div class="background">
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+    <div class="outer-container">
+      <div class="container container1">
+        <div class="inner_container">
+          <div class="title">Individual</div>
+          <div class="main_number">2</div>
+          <div class="container_text">
+            <div class="container_text1">Simple</div>
+            <div class="container_text2">20 gb</div>
+          </div>
+        </div>
+        <a><span>Continue</span></a>
+      </div>
+      <div class="container container2 active">
+        <div class="inner_container">
+          <div class="title">Shared</div>
+          <div class="main_number">6</div>
+          <div class="container_text">
+            <div class="container_text1">Family</div>
+            <div class="container_text2">100 gb</div>
+          </div>
+        </div>
+        <a><span>Continue</span></a>
+      </div>
+      <div class="container container3">
+        <div class="inner_container">
+          <div class="title">Group</div>
+          <div class="main_number">9</div>
+          <div class="container_text">
+            <div class="container_text1">Business</div>
+            <div class="container_text2">500 gb</div>
+          </div>
+        </div>
+        <a><span>Continue</span></a>
+      </div>
+    </div>
+    <div class="outer-container">
+      <div class="container container1">
+        <div class="inner_container">
+          <div class="title">Individual</div>
+          <div class="main_number">2</div>
+          <div class="container_text">
+            <div class="container_text1">Simple</div>
+            <div class="container_text2">20 gb</div>
+          </div>
+        </div>
+        <a><span>Continue</span></a>
+      </div>
+      <div class="container container2 active">
+        <div class="inner_container">
+          <div class="title">Shared</div>
+          <div class="main_number">6</div>
+          <div class="container_text">
+            <div class="container_text1">Family</div>
+            <div class="container_text2">100 gb</div>
+          </div>
+        </div>
+        <a><span>Continue</span></a>
+      </div>
+      <div class="container container3">
+        <div class="inner_container">
+          <div class="title">Group</div>
+          <div class="main_number">9</div>
+          <div class="container_text">
+            <div class="container_text1">Business</div>
+            <div class="container_text2">500 gb</div>
+          </div>
+        </div>
+        <a><span>Continue</span></a>
+      </div>
+    </div>
+    <script>
+      $(".container").click(function () {
+        $(".container").removeClass("active");
+        $(this).addClass("active");
+      });
+    </script>
+  </body>
+</html>
