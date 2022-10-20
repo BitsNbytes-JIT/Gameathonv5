@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #130f13;
 }
 
 .background {
@@ -194,7 +194,7 @@ body {
   font-weight: 800;
   font-size: 0.7rem;
   background-color: #FFF;
-  width: 170px;
+  width: 80%;
   line-height: 40px;
   display: block;
   border-radius: 30px;
@@ -257,12 +257,12 @@ body {
 }
 
 .card {
-  background-color: #fff;
+  background-color: #160d16;
   margin: 4%;
   margin-left: 10%;
-    margin-right: 10%;
+  margin-right: 10%;
   border-radius: 2%;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
 }
 
 
@@ -272,9 +272,11 @@ body {
   .container {
     width: 100%;
   }
+
   .outer-container {
     max-width: 100vw;
-}
+  }
+
   .outer-container .container {
     width: 100%;
   }
@@ -282,14 +284,32 @@ body {
 }
 
 @media only screen and (max-width:560px) {
-.outer-container {
+  .outer-container {
     max-width: 100vw;
-}
+  }
+
   .outer-container .container {
     width: 100%;
     margin: 2%;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    height: 25vh;
   }
-  .card{
+
+  .card {
     margin: 0;
+  }
+
+  .main_number {
+    font-size: 3rem;
+    top: 30%;
+  }
+
+  .container_text1 {
+    font-size: 0.7rem;
+  }
+
+  .container_text2 {
+    font-size: 0.8rem;
   }
 }
