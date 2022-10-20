@@ -259,6 +259,8 @@ body {
 .card {
   background-color: #fff;
   margin: 4%;
+  margin-left: 10%;
+    margin-right: 10%;
   border-radius: 2%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -270,11 +272,24 @@ body {
   .container {
     width: 100%;
   }
+  .outer-container {
+    max-width: 100vw;
+}
+  .outer-container .container {
+    width: 100%;
+  }
 
 }
 
 @media only screen and (max-width:560px) {
+.outer-container {
+    max-width: 100vw;
+}
   .outer-container .container {
     width: 100%;
+    margin: 2%;
+  }
+  .card{
+    margin: 0;
   }
 }
