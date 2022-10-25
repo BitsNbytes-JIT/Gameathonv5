@@ -360,7 +360,7 @@ footer .content p{
 }
 
 footer .content a{
-  color: #333;
+  color: #03e9f4;
 }
 
 footer .content .box {
@@ -535,7 +535,7 @@ footer a:hover {
 
 .cnt223 {
   /* min-width: 600px; */
-  width: 90vw;
+  width: 85vw;
   /* min-height: 150px; */
   height: 85vh;
   margin: auto;
@@ -554,6 +554,7 @@ footer a:hover {
   color: #555555;
   text-align: justify;
   font-size: 20px;
+  padding: 5%;
   font-family: sans-serif;
 }
 
