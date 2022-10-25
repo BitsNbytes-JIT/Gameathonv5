@@ -280,7 +280,7 @@ input[type=checkbox] {
 
   nav ul li {
     width: 100%;
-    margin: 40px 0;
+    margin: 8px 0;
   }
 
   nav ul li a {
@@ -650,8 +650,8 @@ input[type=checkbox] {
 
 /*addition */
 figure {
-	width: 300px;
-	height: 200px;
+	width: 100%;
+	height: 100%;
 	margin: 0;
 	padding: 0;
 	background: #fff;
@@ -970,7 +970,7 @@ footer .bottom {
   width: 100%;
   text-align: right;
   color: #d9d9d9;
-  padding: 0 40px 5px 0;
+  padding: 0 10px 5px 0;
 }
 
 footer .bottom a {
@@ -2774,7 +2774,7 @@ a {
   }
 
   #gallery img {
-    height: 100%;
+    /* height: 100%; */
   }
 
   .gal-container .pop-image span {
