@@ -73,11 +73,12 @@ nav {
 }
 
 .bnb-logo img {
-  height: 50px;
+  /* height: 70px; */
+  width: 6vh;
   margin-top: 5px;
 }
 
-nav ul {
+/* nav ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -101,7 +102,63 @@ nav ul li a {
 nav ul li a.active,
 nav ul li a:hover {
   color: yellow;
+} */
+
+nav ul {
+  list-style: none;
+  text-align: center;
 }
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+nav ul li a {
+  position:relative;
+  z-index: 1;
+}
+nav ul li a:hover {
+  color: white;
+}
+nav ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #00acff;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+nav ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
 
 nav .menu-btn i {
   color: #fff;
@@ -377,9 +434,9 @@ input[type=checkbox] {
 }
 
 .mascot-image {
-  width: 20%;
+  width: 18%;
   float: right;
-  top: 10%;
+  margin-right: 4vw;
 }
 
 /* ABOUT THE COLLEGE SECTION */
@@ -389,7 +446,7 @@ input[type=checkbox] {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #d1f7ff;
+  background-color: #c4e0e5;
   position: relative;
   font-family: sans-serif;
   line-height: 1.5;
@@ -874,6 +931,7 @@ footer .bottom a {
 
 footer a {
   transition: all 0.3s ease;
+  color: #03e9f4;
 }
 
 footer a:hover {
@@ -929,7 +987,7 @@ footer a:hover {
 }
 
 #testimonial-title {
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   font-family: "origin-tech-demo";
   font-size: 1rem;
 }
@@ -956,6 +1014,10 @@ footer a:hover {
 }
 
 .testimonial .slide {
+  border-radius: 20px;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -963,6 +1025,7 @@ footer a:hover {
   row-gap: 30px;
   height: 100%;
   width: 100%;
+  background-color: #f6d1c0;
 }
 
 #testimonial-title h1{
@@ -1106,7 +1169,7 @@ footer a:hover {
   transform: translate(-50%, -50%);
   top: 70%;
   left: 50%;
-
+  margin-top: 2%;
 }
 
 .glitch,
