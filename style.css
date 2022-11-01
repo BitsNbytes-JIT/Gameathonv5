@@ -990,6 +990,16 @@ footer a {
 footer a:hover {
   color: #eb2f06;
 }
+.terms-container {
+  position: relative;
+  justify-content: left;
+  background-color:  #f57ea2;
+  padding: 3rem;
+  padding-bottom: 3em;
+  width: auto;
+  height: 960px;
+  text-align: left;
+}
 
 @media (max-width:1100px) {
   footer .content .middle {
