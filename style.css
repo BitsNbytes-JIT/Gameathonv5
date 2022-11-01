@@ -2508,17 +2508,17 @@ a {
   filter: none;
 }
 
-.register .soon {
+/* .register .soon {
   display: none;
-}
+} */
 
-.register:hover .register-now {
+/* .register:hover .register-now {
   display: none;
-}
+} */
 
-.register:hover .soon {
+/* .register:hover .soon {
   display: block;
-}
+} */
 
 
 
