@@ -16,10 +16,6 @@
   transition: all 0.3s;
 }
 
-a{
-  text-decoration: none;
-}
-
 html,body {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -990,6 +986,19 @@ footer a {
 footer a:hover {
   color: #eb2f06;
 }
+<<<<<<< Updated upstream
+=======
+.terms-container {
+  position: relative;
+  justify-content: left;
+  background-color:  #f57ea2;
+  padding: 3rem;
+  padding-bottom: 3em;
+  width: auto;
+  height: 100%;
+  text-align: left;
+}
+>>>>>>> Stashed changes
 
 @media (max-width:1100px) {
   footer .content .middle {
