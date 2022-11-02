@@ -933,6 +933,17 @@ footer .content .right input[type="text"] {
   font-size: 17px;
   border: 2px solid #222222;
 }
+footer .address-title{
+  color: white;
+}
+
+footer .address-content{
+  color: #03e9f4;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
 footer .content .right input[type="submit"] {
   height: 42px;
