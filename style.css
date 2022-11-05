@@ -16,10 +16,6 @@
   transition: all 0.3s;
 }
 
-a{
-  text-decoration: none;
-}
-
 html,body {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -866,6 +862,9 @@ figure:hover+span {
   margin: 2em 0;
 }
 
+a{
+  text-decoration: none;
+}
 /* FOOTER SECTION */
 footer {
   width: 100%;
@@ -984,6 +983,7 @@ footer .content .media-icons a {
 
 footer .bottom {
   width: 100%;
+      white-space: nowrap;
   text-align: right;
   color: #d9d9d9;
   padding: 0 10px 5px 0;
@@ -1001,6 +1001,7 @@ footer a {
 footer a:hover {
   color: #eb2f06;
 }
+
 .terms-container {
   position: relative;
   justify-content: left;
@@ -1008,8 +1009,12 @@ footer a:hover {
   padding: 3rem;
   padding-bottom: 3em;
   width: auto;
-  height: 960px;
+  height: 100%;
   text-align: left;
+}
+
+.content .right .lower {
+  margin-top: 10%;
 }
 
 @media (max-width:1100px) {
