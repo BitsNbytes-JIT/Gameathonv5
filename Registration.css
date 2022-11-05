@@ -199,6 +199,14 @@ nav ul li a:hover {
   margin-top: 15px;
 }
 
+.address-title {
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
 .title::after {
   content: '';
   display: block;
@@ -372,6 +380,8 @@ footer .content .box {
   transition: all 0.4s ease;
 }
 
+
+
 footer .content .topic {
   font-size: 22px;
   font-weight: 600;
@@ -384,7 +394,7 @@ footer .content p {
   text-align: justify;
 }
 
-footer .content .lower .topic {
+footer .content .lower .topic{
   margin: 24px 0 5px 0;
 }
 
