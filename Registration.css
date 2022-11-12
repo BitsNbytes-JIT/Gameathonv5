@@ -179,7 +179,7 @@ nav ul li a:hover {
 
 .container6 {
   background: #CA619C;
-  background: -webkit-linear-gradient(left top, #CA619C, #DBC084);
+  background: -webkit-linear-gradient(left top, #CA619C, #000000);
   background: linear-gradient(to bottom right, #CA619C, #DBC084);
   margin-left: -50px;
 }
@@ -274,6 +274,7 @@ nav ul li a:hover {
 
 .active .main_number {
   top: 45%;
+  color: #000;
 }
 
 .container a {
